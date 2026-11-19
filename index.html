@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLAME BITE | Taste the Fire</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Outfit:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="background-glow"></div>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <a href="#home" class="brand">
+    <div class="brand-icon">🔥</div>
+    <div class="brand-name">FLAME<span>BITE</span></div>
+  </a>
+
+  <nav class="nav-links">
+    <a href="#home" data-i18n="home">الرئيسية</a>
+    <a href="#menu" data-i18n="menu">المنيو</a>
+    <a href="#offers" data-i18n="offers">العروض</a>
+    <a href="#reviews" data-i18n="reviews">آراء العملاء</a>
+    <a href="#about" data-i18n="about">عن المطعم</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="icon-btn" id="themeToggle" title="تغيير الوضع">☀️</button>
+    <button class="icon-btn" id="languageToggle">EN</button>
+    <button class="cart-btn" id="cartOpen">🛒 <span id="cartCount">0</span></button>
+    <button class="login-btn" id="loginOpen" data-i18n="login">دخول</button>
+    <button class="signup-btn" id="signupOpen" data-i18n="signup">إنشاء حساب</button>
+    <div class="user-box" id="userBox" hidden>
+      <span id="userName"></span>
+      <button id="logoutBtn">↪</button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+  <div class="hero-content">
+    <div class="hero-tag"><span></span> <span data-i18n="heroTag">طعم خارج عن المألوف</span></div>
+
+    <h1 data-i18n="heroTitle">
+      مش مجرد أكل...<br>
+      <span>دي تجربة نار!</span>
+    </h1>
+
+    <p data-i18n="heroDesc">
+      استمتع بأقوى طعم للبرجر والفرايد تشيكن.
+      مكونات طازجة، وصفات مميزة، وطعم مش هتنساه.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#menu" class="main-btn" data-i18n="orderNow">اطلب دلوقتي 🔥</a>
+      <a href="#about" class="secondary-btn" data-i18n="discover">اكتشف المطعم</a>
+    </div>
+
+    <div class="hero-stats">
+      <div><strong>4.9<span>★</span></strong><small data-i18n="rating">تقييم العملاء</small></div>
+      <div><strong>+10K</strong><small data-i18n="customers">عميل سعيد</small></div>
+      <div><strong>25<span>min</span></strong><small data-i18n="deliveryTime">متوسط التوصيل</small></div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-circle circle-one"></div>
+    <div class="hero-circle circle-two"></div>
+
+    <div class="logo-3d">
+      <div class="logo-ring"></div>
+      <div class="logo-flame">🔥</div>
+      <div class="logo-text-3d">FLAME</div>
+      <div class="logo-text-bottom">BITE</div>
+    </div>
+
+    <div class="floating-food floating-one">🍔</div>
+    <div class="floating-food floating-two">🍟</div>
+    <div class="floating-food floating-three">🥤</div>
+
+    <div class="floating-info info-one">🔥 <span data-i18n="fresh">طازج يوميًا</span></div>
+    <div class="floating-info info-two">⭐ 4.9/5</div>
+  </div>
+
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee">
+  <div class="marquee-track">
+    <span>🔥 FLAME BITE</span><span>✦</span><span>BURGERS</span><span>✦</span><span>CRISPY CHICKEN</span><span>✦</span><span>FRESH FOOD</span><span>✦</span>
+    <span>🔥 FLAME BITE</span><span>✦</span><span>BURGERS</span><span>✦</span><span>CRISPY CHICKEN</span><span>✦</span><span>FRESH FOOD</span><span>✦</span>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<section class="features">
+  <div class="feature">
+    <span>🚀</span>
+    <div><h3 data-i18n="fastDelivery">دليفري سريع</h3><p data-i18n="fastDesc">لحد باب بيتك</p></div>
+  </div>
+  <div class="feature">
+    <span>🥩</span>
+    <div><h3 data-i18n="freshQuality">جودة عالية</h3><p data-i18n="qualityDesc">مكونات طازجة يوميًا</p></div>
+  </div>
+  <div class="feature">
+    <span>👨‍🍳</span>
+    <div><h3 data-i18n="chef">شيف محترف</h3><p data-i18n="chefDesc">وصفات بطعم مختلف</p></div>
+  </div>
+  <div class="feature">
+    <span>💳</span>
+    <div><h3 data-i18n="payment">طرق دفع سهلة</h3><p data-i18n="paymentDesc">اختار طريقة الدفع المناسبة</p></div>
+  </div>
+</section>
+
+<!-- MENU -->
+<section class="section menu-section" id="menu">
+  <div class="section-heading">
+    <span class="section-kicker" data-i18n="menuKicker">OUR MENU</span>
+    <h2 data-i18n="menuTitle">اختار مزاجك <span>النهارده</span></h2>
+    <p data-i18n="menuDesc">كل لقمة معمولة بحب... وبنكهة تستاهل</p>
+  </div>
+
+  <div class="menu-filters" id="menuFilters">
+    <button class="filter-btn active" data-category="all" data-i18n="all">الكل</button>
+    <button class="filter-btn" data-category="burger" data-i18n="burgers">برجر</button>
+    <button class="filter-btn" data-category="chicken" data-i18n="chicken">فرايد تشيكن</button>
+    <button class="filter-btn" data-category="sides" data-i18n="sides">جانبيات</button>
+    <button class="filter-btn" data-category="drinks" data-i18n="drinks">مشروبات</button>
+  </div>
+
+  <div class="menu-grid" id="menuGrid"></div>
+</section>
+
+<!-- SPECIAL OFFER -->
+<section class="offer-section" id="offers">
+  <div class="offer-content">
+    <div class="offer-badge" data-i18n="limitedOffer">عرض لفترة محدودة</div>
+    <h2 data-i18n="offerTitle">الجوع ملوش انتظار!</h2>
+    <p data-i18n="offerDesc">Double Burger + Fries + Drink</p>
+    <div class="offer-price"><del>320 EGP</del> <strong>249 EGP</strong></div>
+    <button class="main-btn" id="offerOrder" data-i18n="grabOffer">اطلب العرض</button>
+  </div>
+  <div class="offer-visual">
+    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85" alt="Double Burger Offer">
+    <div class="offer-sticker">-22%</div>
+  </div>
+</section>
+
+<!-- DELIVERY -->
+<section class="delivery-section">
+  <div class="delivery-visual">
+    <div class="delivery-circle">
+      <span>🛵</span>
+      <div class="speed-lines"></div>
+    </div>
+  </div>
+
+  <div class="delivery-content">
+    <span class="section-kicker" data-i18n="deliveryKicker">WE DELIVER</span>
+    <h2 data-i18n="deliveryTitle">أكلك المفضل<br><span>لحد عندك!</span></h2>
+    <p data-i18n="deliveryDesc">اطلب من مكانك واستمتع بوجبتك من غير ما تتحرك. خدمة توصيل سريعة لجميع المناطق المتاحة.</p>
+    <button class="main-btn" id="deliveryOrder" data-i18n="startOrder">ابدأ الطلب 🛵</button>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="section reviews-section" id="reviews">
+  <div class="section-heading">
+    <span class="section-kicker" data-i18n="reviewsKicker">CUSTOMER LOVE</span>
+    <h2 data-i18n="reviewsTitle">قالوا إيه <span>عننا؟</span></h2>
+    <p data-i18n="reviewsDesc">آراء حقيقية من تجربة عملائنا</p>
+  </div>
+
+  <div class="reviews-grid" id="reviewsGrid"></div>
+
+  <div class="review-action">
+    <button class="main-btn" id="reviewOpen" data-i18n="writeReview">⭐ اكتب تقييمك</button>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-logo">🔥</div>
+  <div class="about-content">
+    <span class="section-kicker">OUR STORY</span>
+    <h2 data-i18n="aboutTitle">إحنا مش بنقدم أكل...<br><span>إحنا بنقدم تجربة!</span></h2>
+    <p data-i18n="aboutDesc">FLAME BITE بدأ بحلم إن كل وجبة تكون مختلفة. طعم قوي، جودة نهتم بيها، وتجربة تفضل في بالك بعد آخر لقمة.</p>
+    <div class="about-points">
+      <span>✓ <span data-i18n="aboutPoint1">مكونات مختارة بعناية</span></span>
+      <span>✓ <span data-i18n="aboutPoint2">تحضير طازج</span></span>
+      <span>✓ <span data-i18n="aboutPoint3">طعم مميز في كل مرة</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-brand">
+    <div class="brand-icon">🔥</div>
+    <div class="brand-name">FLAME<span>BITE</span></div>
+    <p data-i18n="footerDesc">Taste the Fire. Feel the Flavor.</p>
+  </div>
+  <div class="footer-links">
+    <a href="#home" data-i18n="home">الرئيسية</a>
+    <a href="#menu" data-i18n="menu">المنيو</a>
+    <a href="#offers" data-i18n="offers">العروض</a>
+    <a href="#reviews" data-i18n="reviews">آراء العملاء</a>
+  </div>
+  <p class="copyright">© 2026 FLAME BITE. All Rights Reserved.</p>
+</footer>
+
+<!-- AUTH MODAL -->
+<div class="modal-overlay" id="authModal">
+  <div class="modal auth-modal">
+    <button class="close-modal" id="authClose">×</button>
+    <div class="modal-brand">🔥 FLAME BITE</div>
+    <h2 id="authTitle">أهلاً بعودتك!</h2>
+    <p id="authSubtitle">سجل دخولك عشان تكمل تجربتك</p>
+
+    <div class="auth-tabs">
+      <button id="loginTab" class="active">تسجيل الدخول</button>
+      <button id="registerTab">إنشاء حساب</button>
+    </div>
+
+    <form id="authForm">
+      <div id="authNameWrap" hidden>
+        <label>الاسم</label>
+        <input id="authName" type="text" placeholder="اسمك" autocomplete="name">
+      </div>
+      <label>البريد الإلكتروني</label>
+      <input id="authEmail" type="email" placeholder="example@email.com" required autocomplete="email">
+      <label>كلمة المرور</label>
+      <input id="authPassword" type="password" placeholder="كلمة المرور" required minlength="6" autocomplete="current-password">
+      <p id="authError" class="error"></p>
+      <button class="main-btn full-btn" id="authSubmit">تسجيل الدخول</button>
+    </form>
+    <p class="auth-switch" id="authSwitch"></p>
+  </div>
+</div>
+
+<!-- CART MODAL -->
+<div class="modal-overlay" id="cartModal">
+  <div class="modal cart-modal">
+    <button class="close-modal" id="cartClose">×</button>
+    <h2 data-i18n="cartTitle">🛒 سلة طلباتك</h2>
+    <div id="cartItems"></div>
+    <div class="cart-total"><span data-i18n="total">الإجمالي</span><strong id="cartTotal">0 EGP</strong></div>
+    <button class="main-btn full-btn" id="checkoutOpen" data-i18n="checkout">إتمام الطلب</button>
+  </div>
+</div>
+
+<!-- CHECKOUT MODAL -->
+<div class="modal-overlay" id="checkoutModal">
+  <div class="modal checkout-modal">
+    <button class="close-modal" id="checkoutClose">×</button>
+    <h2 data-i18n="checkoutTitle">بيانات التوصيل 🛵</h2>
+    <form id="checkoutForm">
+      <label data-i18n="customerName">الاسم بالكامل</label>
+      <input id="customerName" required>
+      <label data-i18n="phone">رقم الهاتف</label>
+      <input id="customerPhone" type="tel" required>
+      <label data-i18n="address">العنوان بالتفصيل</label>
+      <textarea id="customerAddress" rows="3" required></textarea>
+      <label data-i18n="paymentMethod">طريقة الدفع</label>
+      <select id="paymentMethod">
+        <option value="cash">كاش عند الاستلام</option>
+        <option value="card">بطاقة (تجريبي)</option>
+      </select>
+      <div id="checkoutSummary"></div>
+      <button class="main-btn full-btn" data-i18n="confirmOrder">تأكيد الطلب</button>
+    </form>
+  </div>
+</div>
+
+<!-- REVIEW MODAL -->
+<div class="modal-overlay" id="reviewModal">
+  <div class="modal review-modal">
+    <button class="close-modal" id="reviewClose">×</button>
+    <h2 data-i18n="reviewModalTitle">شاركنا تجربتك ❤️</h2>
+    <form id="reviewForm">
+      <label data-i18n="reviewName">اسمك</label>
+      <input id="reviewName" required>
+      <label data-i18n="yourRating">تقييمك</label>
+      <div class="star-picker" id="starPicker">
+        <button type="button" data-star="1">★</button>
+        <button type="button" data-star="2">★</button>
+        <button type="button" data-star="3">★</button>
+        <button type="button" data-star="4">★</button>
+        <button type="button" data-star="5">★</button>
+      </div>
+      <label data-i18n="yourOpinion">رأيك في الأكل</label>
+      <textarea id="reviewText" rows="4" required placeholder="احكيلنا عن تجربتك..."></textarea>
+      <button class="main-btn full-btn" data-i18n="sendReview">نشر التقييم</button>
+    </form>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
